@@ -1,0 +1,391 @@
+/* 内容 */
+.content {
+    width: 100%;
+
+    .contentTitle {
+        width: 100%;
+        height: 4rem;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        padding-left: 1.5rem;
+        box-sizing: border-box;
+
+        a {
+
+            font-size: 1.4rem;
+            color: #222;
+
+            &:first-of-type {
+                font-weight: bold;
+            }
+        }
+
+        span {
+            margin: 0 .5rem;
+        }
+
+    }
+
+    /* 搜索框 */
+    .seletct {
+        margin: 2rem auto;
+        display: flex;
+        justify-content: center;
+        width: 85%;
+        height: 4.5rem;
+        outline: none;
+        border: .1rem solid #E3E3E3;
+        border-radius: .5rem;
+        background-color: #fff;
+
+        form {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            input {
+                flex: 13;
+                border: none;
+                height: 90%;
+                outline: none;
+                font-size: 1.4rem;
+            }
+
+            span {
+                flex: 1;
+            }
+
+            label {
+                flex: 2;
+                width: 2rem;
+                height: 2rem;
+                background: url(../images/SecondHandList/search_03.png) no-repeat;
+                background-size: contain;
+            }
+        }
+    }
+
+    /* 选项卡 */
+    .tableControl {
+        width: 100%;
+        padding: 1.5rem 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border-top: .1rem solid #CCCCCC;
+        border-bottom: .1rem solid #CCCCCC;
+        background-color: #fff;
+
+        li {
+            position: relative;
+            width: 15%;
+
+            p {
+                font-size: 2rem;
+                font-weight: bold;
+                color: #666666;
+            }
+
+            span {
+                position: absolute;
+                top: .6rem;
+                right: .6rem;
+                border-top: .5rem solid #ccc;
+                border-right: .5rem solid transparent;
+                border-bottom: .5rem solid transparent;
+                border-left: .5rem solid transparent;
+            }
+        }
+    }
+
+    /* 租房列表 */
+    .rentaliList {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        li {
+            display: flex;
+            padding: 1.5rem 0;
+            justify-content: space-evenly;
+            width: 90%;
+            border-bottom: .1rem solid #FD9E2F;
+            box-sizing: border-box;
+            align-items: center;
+
+            &:last-of-type {
+                border-bottom: none;
+            }
+
+            .rentaliListPic {
+                width: 9.5rem;
+                height: 9.5rem;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .rentaliListRight {
+                width: 50%;
+
+                .rentalTitle {
+                    width: 100%;
+                    font-size: 1.6rem;
+                    font-weight: bold;
+                    /* 文本不会换行，在同一行继续 */
+                    white-space: nowrap;
+                    /* 溢出隐藏 */
+                    overflow: hidden;
+                    /* 用省略号来代表被修剪的文本 */
+                    text-overflow: ellipsis;
+
+                }
+
+                .describle {
+                    font-size: 1.4rem;
+                    margin: 1rem 0;
+                }
+
+                .tag {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-size: 1.4rem;
+
+                    span {
+                        padding: .2rem .6rem;
+                        background-color: #F5F5F5;
+                        color: #81B23A;
+                        border: .1rem solid #81B23A
+                    }
+
+                    strong {
+                        color: #FF8A00;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* 蒙版 */
+.mb {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+/* 悬浮选项卡 */
+.floatTable {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+
+    .tableA {
+        width: 100%;
+        padding: 1.5rem 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #fff;
+
+        li {
+            position: relative;
+            width: 15%;
+
+            p {
+                font-size: 2rem;
+                font-weight: bold;
+                color: #666666;
+            }
+
+            .tableActive {
+                color: #FF8A00;
+            }
+
+            span {
+                position: absolute;
+                top: .6rem;
+                right: .6rem;
+                border-top: .5rem solid #ccc;
+                border-right: .5rem solid transparent;
+                border-bottom: .5rem solid transparent;
+                border-left: .5rem solid transparent;
+            }
+
+            .spanActive {
+                top: 0;
+                border-top: .5rem solid transparent;
+                border-bottom: .5rem solid #FF8A00;
+            }
+        }
+    }
+
+    .tableBox_first {
+        width: 100%;
+        display: flex;
+        // display: none;
+
+        .tableBoxA {
+            flex: .7;
+            background-color: #F5F5F5;
+
+            li {
+                text-align: center;
+                padding: 15px 5px;
+                font-size: 2rem;
+                font-weight: bold;
+                color: #222;
+            }
+
+            .tableActiveB {
+                color: #FF8A00;
+                background-color: #fff;
+            }
+        }
+
+        .tableBoxB {
+            flex: 2;
+            background-color: #fff;
+            display: flex;
+            flex-wrap: wrap;
+
+            li {
+                width: 50%;
+
+                a {
+                    font-size: 1.4rem;
+                    text-align: center;
+                    display: block;
+                    padding: 1.2rem 1rem;
+                }
+
+                .aActive {
+                    color: #FF8A00;
+                }
+            }
+        }
+
+        .tableBoxB_Active {
+            display: none;
+        }
+    }
+
+    .tableBox_second {
+        width: 100%;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2.5rem 0;
+        box-sizing: border-box;
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            height: 4.5rem;
+            line-height: 4.5rem;
+            border-bottom: .1rem solid #CCCCCC;
+            font-size: 1.4rem;
+
+            &:last-of-type {
+                border-bottom: none;
+                margin-top: 1.5rem;
+            }
+
+            a {
+                flex: 4;
+            }
+
+            input {
+                flex: 1;
+                height: 1.8rem;
+                border: .1rem solid red;
+            }
+
+            button {
+                width: 100%;
+                font-weight: bold;
+                color: #fff;
+                height: 4.5rem;
+                border: none;
+                background-color: #FF8A00;
+            }
+        }
+    }
+
+    .tableBox_third {
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+        background-color: #fff;
+
+        li {
+            display: flex;
+            flex-direction: column;
+
+            width: 90%;
+            border-bottom: .1rem solid #CCCCCC;
+
+            .tableBox_thirdTitle {
+                margin-top: 1rem;
+                font-size: 1.8rem;
+                font-weight: bold;
+            }
+
+            .direction {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                padding: 1rem 0;
+
+                em {
+                    width: 20%;
+                    height: 3rem;
+                    margin-top: 1rem;
+                    line-height: 3rem;
+                    text-align: center;
+                    border: .1rem solid #CCCCCC;
+                }
+            }
+
+            .celarCondition,
+            .contain {
+                width: 100%;
+                height: 6rem;
+                line-height: 6rem;
+                font-size: 1.4rem;
+                text-align: center;
+                outline: none;
+                border: none;
+                color: #666666;
+                background-color: #fff;
+            }
+
+            .contain {
+                color: #fff;
+                height: 4.5rem;
+                line-height: 4.5rem;
+
+                background-color: #FF8A00
+            }
+        }
+    }
+
+    .disActive {
+        display: none;
+    }
+}

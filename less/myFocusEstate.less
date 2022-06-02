@@ -1,0 +1,100 @@
+/* 内容 */
+.content {
+    width: 100%;
+
+    .contentTitle {
+        width: 100%;
+        height: 4rem;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        padding-left: 1.5rem;
+        box-sizing: border-box;
+
+        a {
+
+            font-size: 1.4rem;
+            color: #222;
+
+            &:first-of-type {
+                font-weight: bold;
+            }
+        }
+
+        span {
+            margin: 0 .5rem;
+        }
+    }
+
+    /* 我关注的小区 */
+    .rentaliList {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        li {
+            display: flex;
+            padding: 1.5rem 0;
+            justify-content: space-evenly;
+            width: 90%;
+            border-bottom: .1rem solid #FD9E2F;
+            box-sizing: border-box;
+            align-items: center;
+
+            &:last-of-type {
+                border-bottom: none;
+            }
+
+            .rentaliListPic {
+                width: 9.5rem;
+                height: 9.5rem;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .rentaliListRight {
+                width: 50%;
+
+                .rentalTitle {
+                    width: 100%;
+                    font-size: 1.6rem;
+                    font-weight: bold;
+                    /* 文本不会换行，在同一行继续 */
+                    white-space: nowrap;
+                    /* 溢出隐藏 */
+                    overflow: hidden;
+                    /* 用省略号来代表被修剪的文本 */
+                    text-overflow: ellipsis;
+
+                }
+
+                .describle {
+                    font-size: 1.4rem;
+                    margin: .5rem 0;
+                }
+
+                .address {
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 1.4rem;
+
+                    strong {
+                        color: #FF8A00;
+                        font-weight: bold;
+                    }
+                }
+
+                .tag {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-size: 1.4rem;
+                    color: #222;
+                }
+            }
+        }
+    }
+}

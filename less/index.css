@@ -1,0 +1,268 @@
+/* banner */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 25rem;
+  background: url(../images/index/banner.png) no-repeat;
+  background-size: cover;
+}
+.banner form .magnify {
+  z-index: 2;
+  position: absolute;
+  bottom: 7%;
+  left: 11%;
+  transform: translateX(-50%);
+  width: 3.3rem;
+  height: 3.3rem;
+  background: url(../images/index/seach.jpg) no-repeat center 0.7rem;
+  background-size: auto 70%;
+}
+.banner form input {
+  position: absolute;
+  bottom: 6%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 3.5rem;
+  padding-left: 4rem;
+  font-size: 1.4rem;
+  outline: none;
+  border-radius: 0.5rem;
+  border: 0.2rem solid #222;
+  box-sizing: border-box;
+}
+/* 内容 */
+.content {
+  width: 100%;
+  /* 房子logo */
+  /* 广告位 */
+  /* 热门房源 */
+  /* 热门关注 */
+}
+.content .houseChoice {
+  width: 100%;
+  height: 11rem;
+  background-color: #FF8A00;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.content .houseChoice li a {
+  display: block;
+  width: 6.5rem;
+}
+.content .houseChoice li a p {
+  text-align: center;
+  color: #fff;
+  font-size: 1.4rem;
+}
+.content .houseChoice li a img {
+  width: 100%;
+}
+.content .advert {
+  width: 100%;
+  height: 33rem;
+  margin: 2rem auto;
+  background: url(../images/index/banner2.png) no-repeat;
+  background-size: contain;
+}
+.content .hotHouseBox {
+  width: 100%;
+}
+.content .hotHouseBox .hotHouse {
+  width: 100%;
+  height: 6rem;
+  background-color: #FF8A00;
+  font-weight: bold;
+  color: #fff;
+  padding-left: 2rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.content .hotHouseBox .hotHouse p {
+  font-size: 2rem;
+}
+.content .hotHouseBox .hotHouse em {
+  font-style: normal;
+  font-size: 1.2rem;
+}
+.content .hotHouseBox .hotHouseList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+}
+.content .hotHouseBox .hotHouseList li {
+  align-items: center;
+  width: 85%;
+  padding: 3rem 0;
+  line-height: 2.8rem;
+  border-bottom: 0.1rem solid #FF0000;
+  display: flex;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+}
+.content .hotHouseBox .hotHouseList li:nth-of-type(2) > .hotHousePic {
+  background: url(../images/index/img2.png) no-repeat center;
+}
+.content .hotHouseBox .hotHouseList li:last-of-type {
+  border-bottom: none;
+}
+.content .hotHouseBox .hotHouseList li:nth-of-type(3) > .hotHousePic {
+  background: url(../images/index/img3.png) no-repeat center;
+}
+.content .hotHouseBox .hotHouseList li .hotHousePic {
+  flex: 1;
+  width: 9rem;
+  height: 9rem;
+  background: url(../images/index/img1.jpg) no-repeat center;
+  background-size: cover;
+}
+.content .hotHouseBox .hotHouseList li .hotHousedel {
+  flex: 3;
+  height: 115%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 1.5rem;
+}
+.content .hotHouseBox .hotHouseList li .hotHousedel .title {
+  width: 100%;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #222;
+  /*   文本不会换行，在同一行继续 */
+  white-space: nowrap;
+  /* 溢出隐藏 */
+  overflow: hidden;
+  /*  用省略号来代表被修剪的文本 */
+  text-overflow: ellipsis;
+}
+.content .hotHouseBox .hotHouseList li .hotHousedel .title2,
+.content .hotHouseBox .hotHouseList li .hotHousedel .title3 {
+  display: flex;
+  justify-content: space-between;
+}
+.content .hotHouseBox .hotHouseList li .hotHousedel .title2 em,
+.content .hotHouseBox .hotHouseList li .hotHousedel .title3 em {
+  font-size: 1.4rem;
+}
+.content .hotHouseBox .hotHouseList li .hotHousedel .title2 span,
+.content .hotHouseBox .hotHouseList li .hotHousedel .title3 span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #FF8A00;
+}
+.content .hotHouseBox .hotHouseList li .hotHousedel .title3 em {
+  color: #8B8B8B;
+}
+.content .hotHouseBox .hotHouseList li .hotHousedel .title3 span {
+  font-size: 1.4rem;
+  color: #999999;
+  font-weight: normal;
+}
+.content .hotHouseBox .hotHouseList li .hotHousedel .aBox a {
+  padding: 0.2rem 0.4rem;
+  color: #849AAE;
+  background-color: #f4f7f9;
+  font-size: 1.4rem;
+  margin-right: 0.5rem;
+}
+.content .hotHouseBox .hotHouseList li .hotHousedel .aBox a:last-of-type {
+  margin-right: 0;
+}
+.content .hotAttent {
+  width: 100%;
+  height: 22.5rem;
+  margin-top: 1.5rem;
+  position: relative;
+}
+.content .hotAttent .hotAttentTitle {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2rem;
+  color: #666666;
+  background-color: #fff;
+}
+.content .hotAttent .hotAttentTitle p {
+  flex: 1;
+  padding: 1.2rem 0;
+  align-self: center;
+  border-bottom: 0.1rem solid #FF8A00;
+  text-align: center;
+}
+.content .hotAttent .hotAttentTitle .tilteActive {
+  color: #ff8a00;
+  border-bottom: 0.2rem solid #FF8A00;
+}
+.content .hotAttent ul {
+  width: 100%;
+  display: flex;
+  padding: 15px 0;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #fff;
+  display: none;
+}
+.content .hotAttent ul li {
+  width: 35%;
+  line-height: 3.5rem;
+  font-size: 1.4rem;
+}
+.content .hotAttent .hotAttentlistA {
+  position: absolute;
+  top: 5.7rem;
+  left: 0;
+  display: flex;
+}
+.content .hotAttent .hotAttentlistB {
+  position: absolute;
+  top: 5.7rem;
+  left: 0;
+}
+.flipWindow {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 5rem;
+  background-color: rgba(23, 24, 24, 0.8);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flipWindow li .wrong {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 50%;
+  color: #888;
+  background-color: #666666;
+}
+.flipWindow li .flipWindowPic {
+  width: 4rem;
+  height: 4rem;
+  background: url(../images/index/download.png) no-repeat center;
+  background-size: contain;
+}
+.flipWindow li p {
+  font-size: 1.4rem;
+  color: #fff;
+}
+.flipWindow li .Largetitle {
+  font-size: 1.8rem;
+}
+.flipWindow li a {
+  padding: 12px 20px;
+  color: #fff;
+  background-color: #FF8A00;
+  display: inline-block;
+  font-size: 1.8rem;
+}

@@ -1,0 +1,107 @@
+/* 内容 */
+.content {
+  width: 100%;
+  margin-bottom: 30%;
+  /* table切换 */
+}
+.content .contentTitle {
+  width: 100%;
+  height: 4rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem;
+  box-sizing: border-box;
+}
+.content .contentTitle a {
+  font-size: 1.4rem;
+  color: #222;
+}
+.content .contentTitle a:first-of-type {
+  font-weight: bold;
+}
+.content .contentTitle span {
+  margin: 0 0.5rem;
+}
+.content .tablebox {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  background-color: #fff;
+}
+.content .tablebox li {
+  flex: 1;
+  height: 100%;
+  text-align: center;
+  line-height: 5rem;
+  border-top: 0.1rem solid #F0F0F0;
+  border-bottom: 0.5rem solid #F0F0F0;
+}
+.content .tablebox .liActive {
+  border-bottom: 0.5rem solid #FF8A00;
+}
+.content form {
+  display: none;
+  width: 100%;
+  font-size: 1.4rem;
+  border-top: 0.1rem solid #DCDCDC;
+  background-color: #fff;
+  position: relative;
+}
+.content form input {
+  width: 100%;
+  height: 100%;
+  height: 5rem;
+  line-height: 5rem;
+  padding-left: 1.5rem;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  border-bottom: 0.2rem solid #DCDCDC;
+}
+.content form label {
+  position: absolute;
+  top: 0.5rem;
+  right: 3rem;
+  width: 9rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  text-align: center;
+  font-size: 1.4rem;
+  color: #666666;
+  border: 0.1rem solid #dcdcdc;
+}
+.content form label:hover {
+  cursor: pointer;
+}
+.content form button {
+  margin: 1.5rem auto;
+  width: 100%;
+  height: 6rem;
+  text-align: center;
+  outline: none;
+  border: none;
+  line-height: 6rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #FF8A00;
+}
+.content .formdisplay {
+  display: block;
+}
+.content .ChanneBbox {
+  font-size: 1.6rem;
+  color: #666666;
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem auto;
+  padding: 0 1.5rem;
+}
+.content .ChanneBbox a:hover {
+  color: #FF8A00;
+}
