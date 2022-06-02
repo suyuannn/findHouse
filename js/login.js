@@ -43,13 +43,11 @@ table(tablebox, form);
 
 // 普通登录-手机号
 var phone = document.getElementsByClassName('phone');
-console.log(phone);
+// console.log(phone);
 for (var i = 0; i < phone.length; i++) {
     phone[i].ind = i;
     phone[i].onblur = function () {
         var phoneValue = phone[this.ind].value;
-        console.log(phone[this.ind])
-        console.log(phoneValue)
         var reg1 = /^1[3-9][0-9]{9}$/; //手机号
         var reg2 = /^\s*$/g; //不能为空
         if (reg2.test(phoneValue)) {
@@ -93,7 +91,6 @@ btn1.ontouchstart = function () {
     // console.log(phoneNumber, pwdValue)
     var passwords = localStorage.getItem('password'); // 获取浏览器中密码 的 localStorage
     var phone = localStorage.getItem('phoneNumber'); // 获取浏览器中手机号 的 localStorage
-    console.log(passwords, phone)
     if (phoneNumber == phone && pwdValue == passwords) {
         window.location.href = 'index.html';
         alert('恭喜你登录成功');
@@ -119,7 +116,6 @@ pwd2.onblur = function () {
 var btn2 = document.getElementById('btn2');
 btn2.ontouchstart = function () {
     var phoneNumber = document.getElementsByClassName('phone')[1].value;
-    console.log(phoneNumber);
     var phone = localStorage.getItem('phoneNumber'); // 获取浏览器中手机号 的 localStorage
     var yzmNumber = 888666;
     var yzm = 888666;
