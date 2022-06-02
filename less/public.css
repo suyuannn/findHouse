@@ -1,0 +1,95 @@
+/* 头部 */
+html {
+  font-size: 10px;
+}
+header {
+  width: 100%;
+  height: 4.5rem;
+  background-color: #FF8A00;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header .logo {
+  display: block;
+  width: 11.5rem;
+  height: 4rem;
+}
+header .logo img {
+  width: 100%;
+  height: 100%;
+}
+header .headRight {
+  width: 22%;
+  display: flex;
+  align-items: stretch;
+}
+header .headRight .my,
+header .headRight .xiazia {
+  display: inline-block;
+  height: 3.3rem;
+  flex: 1;
+}
+header .headRight .my img,
+header .headRight .xiazia img {
+  height: 100%;
+}
+header .headRight .xiazia {
+  height: 3.5rem;
+}
+/* 底部 */
+footer {
+  padding: 0.7rem 0rem;
+  width: 100%;
+  background-color: #2F3130;
+  box-sizing: border-box;
+}
+footer .footerTitle {
+  padding: 0.2rem 1.8rem;
+  width: 100%;
+  background-color: #2F3130;
+  font-size: 1.4rem;
+  box-sizing: border-box;
+  color: #939494;
+}
+footer .footerTitle p {
+  height: 4rem;
+  line-height: 4rem;
+  border-bottom: 0.1rem solid #3E403F;
+}
+footer .footerTitle p a {
+  color: #939494;
+  font-weight: bold;
+}
+footer .phoneIcon {
+  display: flex;
+  padding: 1.5rem 0;
+  justify-content: space-evenly;
+}
+footer .phoneIcon li {
+  display: flex;
+  width: 25%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer .phoneIcon li:last-of-type > .phoneIconPic {
+  background: url(../images/index/android.png) no-repeat;
+  background-size: auto 100%;
+}
+footer .phoneIcon li .phoneIconPic {
+  width: 2rem;
+  height: 2rem;
+  background: url(../images/index/apple.png) no-repeat;
+  background-size: auto 100%;
+}
+footer .phoneIcon li p {
+  width: 43%;
+  color: #939494;
+  font-size: 1.2rem;
+}
+footer .text {
+  color: #939494;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
