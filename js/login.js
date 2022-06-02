@@ -121,7 +121,7 @@ btn2.ontouchstart = function () {
     var yzm = 888666;
     if (phoneNumber == phone && yzmNumber == yzm) {
         alert('恭喜你登录成功');
-        window.location.href = 'index.html';
+        window.location.href = 'mine.html';
     } else {
         alert('与提示的验证码不符合,登录失败！');
     }
