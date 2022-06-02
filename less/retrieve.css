@@ -1,0 +1,64 @@
+/* 找回密码 */
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  font-size: 10px;
+  background: #f5f5f5;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.box {
+  width: 100%;
+}
+.box p {
+  width: 100%;
+  padding: 1.5rem 0;
+  background-color: white;
+  font-size: 1.4rem;
+  padding-left: 1rem;
+  border-bottom: 0.1rem solid #c5c5c5;
+}
+.box p a {
+  padding-left: 0.5rem;
+}
+.box p > a:nth-of-type(1) {
+  font-weight: 600;
+}
+form .list {
+  width: 100%;
+  background-color: white;
+}
+form .list .click input {
+  width: 67%;
+}
+form .list .click a {
+  padding: 1rem 1.5rem;
+  margin-right: 1rem;
+  border: 0.1rem solid #dcdcdc;
+}
+form .list li {
+  width: 100%;
+  border-bottom: 0.1rem solid #c5c5c5;
+}
+form .list li input {
+  width: 95%;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin-left: 1rem;
+  border: none;
+  outline: none;
+}
+form button {
+  width: 87%;
+  height: 5rem;
+  margin: 1.5rem 2.5rem;
+  background: #ff8a00;
+  font-size: 2rem;
+  color: white;
+  border: none;
+}

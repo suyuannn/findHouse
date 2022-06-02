@@ -1,0 +1,277 @@
+/* 租房详情页 */
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  font-size: 10px;
+  background: #f5f5f5;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.box {
+  width: 100%;
+}
+.box .top {
+  width: 94.5%;
+  height: 4.4rem;
+  background-color: #ffffff;
+  line-height: 4.4rem;
+  font-size: 1.4rem;
+  padding-left: 2rem;
+}
+.box .top > a:nth-of-type(1) {
+  color: black;
+  font-weight: 600;
+}
+.box .img_back {
+  width: 100%;
+}
+.box .img_back img {
+  width: 100%;
+}
+.box .img_back span {
+  position: absolute;
+  top: 20.4rem;
+  right: 0.1rem;
+  color: #ffffff;
+  width: 7rem;
+  height: 5rem;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 1rem 0 0 1rem;
+  text-align: center;
+  line-height: 5rem;
+  font-size: 1.4rem;
+}
+.box .introduce {
+  width: 100%;
+  display: flex;
+  border-bottom: 0.1rem solid #dcdcdc;
+  background-color: #F9F9F9;
+}
+.box .introduce .left {
+  flex: 3;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-left: 2rem;
+  padding-top: 1rem;
+}
+.box .introduce .right {
+  flex: 1;
+  height: 8rem;
+  font-size: 1.4rem;
+  line-height: 11rem;
+  background: url(../images/rentalList/xin.png) no-repeat 3.2rem 1.7rem;
+  border-left: 0.1rem solid #dcdcdc;
+  text-align: center;
+  background-size: 2.5rem;
+}
+.box .charter_money {
+  width: 100%;
+  padding: 3.7rem 0;
+}
+.box .charter_money .list {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.box .charter_money .list li {
+  width: 33%;
+  font-size: 1.4rem;
+  border-right: 0.1rem solid #dcdcdc;
+}
+.box .charter_money .list li div {
+  margin-bottom: 1rem;
+}
+.box .charter_money .list li span {
+  color: #ff8a00;
+}
+.box .details {
+  width: 100%;
+}
+.box .details .list_a {
+  background-color: white;
+  padding: 0 2rem;
+}
+.box .details .list_a li {
+  width: 100%;
+  height: 5.5rem;
+  display: flex;
+  line-height: 5.5rem;
+  border-bottom: 0.1rem solid #dcdcdc;
+  justify-content: space-evenly;
+}
+.box .details .list_a li div {
+  width: 50%;
+  font-size: 1.4rem;
+}
+.box .evaluate {
+  width: 94%;
+  margin: 1rem 1rem 1rem 1rem;
+  border: 0.1rem solid #dcdcdc;
+}
+.box .evaluate p {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ff8a00;
+  padding: 1.5rem 0;
+  padding-left: 1.5rem;
+  background: white;
+  border-bottom: 0.1rem solid #dcdcdc;
+}
+.box .evaluate p span {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background: url(../images/rentalList/right.png) no-repeat 0.1rem 0.1rem;
+  background-size: 1rem;
+  margin-left: 21rem;
+}
+.box .evaluate div {
+  padding: 1rem 1rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  background: white;
+}
+.box .evaluate_a {
+  width: 94%;
+  margin: 1rem 1rem 1rem 1rem;
+  border: 0.1rem solid #dcdcdc;
+}
+.box .evaluate_a p {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ff8a00;
+  padding: 1.5rem 0;
+  padding-left: 1.5rem;
+  background: white;
+  border-bottom: 0.1rem solid #dcdcdc;
+}
+.box .evaluate_a p span {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background: url(../images/rentalList/right.png) no-repeat 0.1rem 0.1rem;
+  background-size: 1rem;
+  margin-left: 19rem;
+}
+.box .evaluate_a div {
+  padding: 1rem 1rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  background: white;
+}
+.box .evaluate_a_a {
+  width: 94%;
+  margin: 1rem 1rem 1rem 1rem;
+  border: 0.1rem solid #dcdcdc;
+}
+.box .evaluate_a_a p {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ff8a00;
+  padding: 1.5rem 0;
+  padding-left: 1.5rem;
+  background: white;
+  border-bottom: 0.1rem solid #dcdcdc;
+}
+.box .evaluate_a_a p span {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background: url(../images/rentalList/right.png) no-repeat 0.1rem 0.1rem;
+  background-size: 1rem;
+  margin-left: 19rem;
+}
+.box .evaluate_a_a div {
+  width: 94%;
+  padding: 1rem;
+  background-color: #ffffff;
+  border: 0.1rem solid #dcdcdc;
+}
+.box .evaluate_a_a div p {
+  width: 95%;
+  font-size: 1.6rem;
+  color: black;
+  border: 0.1rem solid #dcdcdc;
+}
+.box .evaluate_a_a div img {
+  width: 100%;
+}
+.box .evaluate_a_b {
+  width: 94%;
+  margin: 1rem 1rem 1rem 1rem;
+  border: 0.1rem solid #dcdcdc;
+}
+.box .evaluate_a_b p {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ff8a00;
+  padding: 1.5rem 0;
+  padding-left: 1.5rem;
+  background: white;
+  border-bottom: 0.1rem solid #dcdcdc;
+}
+.box .evaluate_a_b p span {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background: url(../images/rentalList/right.png) no-repeat 0.1rem 0.1rem;
+  background-size: 1rem;
+  margin-left: 19rem;
+}
+.box .evaluate_a_b div {
+  padding: 1rem 1rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  background: white;
+}
+.box .evaluate_a_b div span {
+  color: #ff8a00;
+}
+.box .bottom {
+  width: 100%;
+  display: flex;
+  background-color: #ffffff;
+}
+.box .bottom .left_a {
+  flex: 4;
+  display: flex;
+  padding: 1rem;
+}
+.box .bottom .left_a img {
+  width: 20%;
+  padding-right: 1rem;
+}
+.box .bottom .left_a div {
+  flex: 2;
+  line-height: 2.5rem;
+  font-size: 1.4rem;
+}
+.box .bottom .right_a {
+  flex: 2;
+}
+.box .bottom .right_a a {
+  width: 4rem;
+  padding-right: 1rem;
+  text-align: center;
+  display: inline-block;
+  height: 6rem;
+  line-height: 11rem ;
+  font-size: 1.4rem;
+  color: #5dcb96;
+  background: url(../images/rentalList/icon1.png) no-repeat 0.3rem 0.6rem;
+  background-size: 3.5rem;
+}
+.box .bottom .right_a > a:nth-of-type(2) {
+  color: #5baede;
+  background: url(../images/rentalList/icon2.png) no-repeat 0.3rem 0.6rem;
+  background-size: 3.5rem;
+}
