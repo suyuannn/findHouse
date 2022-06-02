@@ -89,7 +89,7 @@ btn.ontouchstart = function () {
     if (reg1.test(phone.value) && yzmNumber == verifyCode.value && reg4.test(pwd.value)) {
         localStorage.setItem('phoneNumber', phoneNumber);
         localStorage.setItem('password', password);
-        window.location.href = 'index.html';
+        window.location.href = 'login.html';
         alert('恭喜你注册成功');
     } else {
         alert('注册失败！');

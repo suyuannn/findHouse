@@ -15,6 +15,7 @@ function table(btn1, list1) {
         }
     }
 }
+
 table(btn, list);
 // 控制弹窗广告
 var wrong = document.getElementsByClassName('wrong')[0];

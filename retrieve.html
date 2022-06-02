@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>登录</title>
+    <title>找房无忧-找回密码</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="less/public.css">
-    <link rel="stylesheet" href="less/login.css">
+    <link rel="stylesheet" href="./less/retrieve.css">
 </head>
 
 <body>
@@ -20,35 +20,28 @@
             <a href="#" class="xiazia"><img src="images/index/xiazai.png"></a>
         </div>
     </header>
-    <!-- 内容 -->
-    <div class="content">
-        <div class="contentTitle">
-            <a href="index.html">首页</a>
-            <span>></span>
-            <a href="#">我的</a>
-            <span>></span>
-            <a href="login.html">登录</a>
-        </div>
-        <!-- table切换 -->
-        <ul class="tablebox">
-            <li class="liActive">普通登录</li>
-            <li>验证码快捷登录</li>
-        </ul>
-        <form class="formdisplay">
-            <input type="text" placeholder="请输入手机号" class="phone" required>
-            <input type="password" placeholder="请输入密码" id="pwd" required>
-            <button id="btn1">立即登录</button>
+    <!-- 外层盒子 -->
+    <div class="box">
+        <p><a href="index.html">首页</a>><a href="#">找回密码</a></p>
+        <!-- 内容区域 -->
+        <form action="#">
+            <ul class="list">
+                <li class="click">
+                    <input type="text" placeholder="请输入手机号码">
+                    <a href="#">发送验证码</a>
+                </li>
+                <li class="inp">
+                    <input type="text" placeholder="请输入短信中的验证码">
+                </li>
+                <li class="inp_a">
+                    <input type="password" name="" id="inp_a" placeholder="请输入新密码">
+                </li>
+                <li class="inp_b">
+                    <input type="password" name="" id="inp_b" placeholder="请输入确认密码">
+                </li>
+            </ul>
+            <button class="but">提交</button>
         </form>
-        <form>
-            <input type="text" placeholder="请输入手机号" class="phone" required class="phone2">
-            <label for="phone2" id="containVerify">发送验证码</label>
-            <input type="text" placeholder="请短信中的验证码" id="pwd2" required>
-            <button id="btn2">验证并登录</button>
-        </form>
-        <div class="ChanneBbox">
-            <a href="./register.html">立即注册</a>
-            <a href="#">忘记密码</a>
-        </div>
     </div>
     <!-- 底部 -->
     <footer>
@@ -74,5 +67,6 @@
 
 </html>
 <script src="js/jquery-3.6.0.js"></script>
+<script src="./js/touch-0.2.14.min.js"></script>
 <script src="js/public.js"></script>
-<script src="js/login.js"></script>
+<script src="./js/retrieve.js"></script>
