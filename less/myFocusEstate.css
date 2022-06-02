@@ -1,0 +1,83 @@
+/* 内容 */
+.content {
+  width: 100%;
+  /* 我关注的小区 */
+}
+.content .contentTitle {
+  width: 100%;
+  height: 4rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem;
+  box-sizing: border-box;
+}
+.content .contentTitle a {
+  font-size: 1.4rem;
+  color: #222;
+}
+.content .contentTitle a:first-of-type {
+  font-weight: bold;
+}
+.content .contentTitle span {
+  margin: 0 0.5rem;
+}
+.content .rentaliList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content .rentaliList li {
+  display: flex;
+  padding: 1.5rem 0;
+  justify-content: space-evenly;
+  width: 90%;
+  border-bottom: 0.1rem solid #FD9E2F;
+  box-sizing: border-box;
+  align-items: center;
+}
+.content .rentaliList li:last-of-type {
+  border-bottom: none;
+}
+.content .rentaliList li .rentaliListPic {
+  width: 9.5rem;
+  height: 9.5rem;
+}
+.content .rentaliList li .rentaliListPic img {
+  width: 100%;
+  height: 100%;
+}
+.content .rentaliList li .rentaliListRight {
+  width: 50%;
+}
+.content .rentaliList li .rentaliListRight .rentalTitle {
+  width: 100%;
+  font-size: 1.6rem;
+  font-weight: bold;
+  /* 文本不会换行，在同一行继续 */
+  white-space: nowrap;
+  /* 溢出隐藏 */
+  overflow: hidden;
+  /* 用省略号来代表被修剪的文本 */
+  text-overflow: ellipsis;
+}
+.content .rentaliList li .rentaliListRight .describle {
+  font-size: 1.4rem;
+  margin: 0.5rem 0;
+}
+.content .rentaliList li .rentaliListRight .address {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+}
+.content .rentaliList li .rentaliListRight .address strong {
+  color: #FF8A00;
+  font-weight: bold;
+}
+.content .rentaliList li .rentaliListRight .tag {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+  color: #222;
+}

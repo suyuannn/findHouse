@@ -1,0 +1,330 @@
+/* 内容 */
+.content {
+  width: 100%;
+  /* 搜索框 */
+  /* 选项卡 */
+  /* 租房列表 */
+}
+.content .contentTitle {
+  width: 100%;
+  height: 4rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem;
+  box-sizing: border-box;
+}
+.content .contentTitle a {
+  font-size: 1.4rem;
+  color: #222;
+}
+.content .contentTitle a:first-of-type {
+  font-weight: bold;
+}
+.content .contentTitle span {
+  margin: 0 0.5rem;
+}
+.content .seletct {
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  height: 4.5rem;
+  outline: none;
+  border: 0.1rem solid #E3E3E3;
+  border-radius: 0.5rem;
+  background-color: #fff;
+}
+.content .seletct form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .seletct form input {
+  flex: 13;
+  border: none;
+  height: 90%;
+  outline: none;
+  font-size: 1.4rem;
+}
+.content .seletct form span {
+  flex: 1;
+}
+.content .seletct form label {
+  flex: 2;
+  width: 2rem;
+  height: 2rem;
+  background: url(../images/SecondHandList/search_03.png) no-repeat;
+  background-size: contain;
+}
+.content .tableControl {
+  width: 100%;
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 0.1rem solid #CCCCCC;
+  border-bottom: 0.1rem solid #CCCCCC;
+  background-color: #fff;
+}
+.content .tableControl li {
+  position: relative;
+  width: 15%;
+}
+.content .tableControl li p {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #666666;
+}
+.content .tableControl li span {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  border-top: 0.5rem solid #ccc;
+  border-right: 0.5rem solid transparent;
+  border-bottom: 0.5rem solid transparent;
+  border-left: 0.5rem solid transparent;
+}
+.content .rentaliList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content .rentaliList li {
+  display: flex;
+  padding: 1.5rem 0;
+  justify-content: space-evenly;
+  width: 90%;
+  border-bottom: 0.1rem solid #FD9E2F;
+  box-sizing: border-box;
+  align-items: center;
+}
+.content .rentaliList li:last-of-type {
+  border-bottom: none;
+}
+.content .rentaliList li .rentaliListPic {
+  width: 9.5rem;
+  height: 9.5rem;
+}
+.content .rentaliList li .rentaliListPic img {
+  width: 100%;
+  height: 100%;
+}
+.content .rentaliList li .rentaliListRight {
+  width: 50%;
+}
+.content .rentaliList li .rentaliListRight .rentalTitle {
+  width: 100%;
+  font-size: 1.6rem;
+  font-weight: bold;
+  /* 文本不会换行，在同一行继续 */
+  white-space: nowrap;
+  /* 溢出隐藏 */
+  overflow: hidden;
+  /* 用省略号来代表被修剪的文本 */
+  text-overflow: ellipsis;
+}
+.content .rentaliList li .rentaliListRight .describle {
+  font-size: 1.4rem;
+  margin: 1rem 0;
+}
+.content .rentaliList li .rentaliListRight .tag {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+}
+.content .rentaliList li .rentaliListRight .tag span {
+  padding: 0.2rem 0.6rem;
+  background-color: #F5F5F5;
+  color: #81B23A;
+  border: 0.1rem solid #81B23A;
+}
+.content .rentaliList li .rentaliListRight .tag strong {
+  color: #FF8A00;
+  font-weight: bold;
+}
+/* 蒙版 */
+.mb {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* 悬浮选项卡 */
+.floatTable {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: none;
+}
+.floatTable .tableA {
+  width: 100%;
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #fff;
+}
+.floatTable .tableA li {
+  position: relative;
+  width: 15%;
+}
+.floatTable .tableA li p {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #666666;
+}
+.floatTable .tableA li .tableActive {
+  color: #FF8A00;
+}
+.floatTable .tableA li span {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  border-top: 0.5rem solid #ccc;
+  border-right: 0.5rem solid transparent;
+  border-bottom: 0.5rem solid transparent;
+  border-left: 0.5rem solid transparent;
+}
+.floatTable .tableA li .spanActive {
+  top: 0;
+  border-top: 0.5rem solid transparent;
+  border-bottom: 0.5rem solid #FF8A00;
+}
+.floatTable .tableBox_first {
+  width: 100%;
+  display: flex;
+}
+.floatTable .tableBox_first .tableBoxA {
+  flex: 0.7;
+  background-color: #F5F5F5;
+}
+.floatTable .tableBox_first .tableBoxA li {
+  text-align: center;
+  padding: 15px 5px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #222;
+}
+.floatTable .tableBox_first .tableBoxA .tableActiveB {
+  color: #FF8A00;
+  background-color: #fff;
+}
+.floatTable .tableBox_first .tableBoxB {
+  flex: 2;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+}
+.floatTable .tableBox_first .tableBoxB li {
+  width: 50%;
+}
+.floatTable .tableBox_first .tableBoxB li a {
+  font-size: 1.4rem;
+  text-align: center;
+  display: block;
+  padding: 1.2rem 1rem;
+}
+.floatTable .tableBox_first .tableBoxB li .aActive {
+  color: #FF8A00;
+}
+.floatTable .tableBox_first .tableBoxB_Active {
+  display: none;
+}
+.floatTable .tableBox_second {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem 0;
+  box-sizing: border-box;
+}
+.floatTable .tableBox_second li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  border-bottom: 0.1rem solid #CCCCCC;
+  font-size: 1.4rem;
+}
+.floatTable .tableBox_second li:last-of-type {
+  border-bottom: none;
+  margin-top: 1.5rem;
+}
+.floatTable .tableBox_second li a {
+  flex: 4;
+}
+.floatTable .tableBox_second li input {
+  flex: 1;
+  height: 1.8rem;
+  border: 0.1rem solid red;
+}
+.floatTable .tableBox_second li button {
+  width: 100%;
+  font-weight: bold;
+  color: #fff;
+  height: 4.5rem;
+  border: none;
+  background-color: #FF8A00;
+}
+.floatTable .tableBox_third {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  background-color: #fff;
+}
+.floatTable .tableBox_third li {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  border-bottom: 0.1rem solid #CCCCCC;
+}
+.floatTable .tableBox_third li .tableBox_thirdTitle {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.floatTable .tableBox_third li .direction {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+.floatTable .tableBox_third li .direction em {
+  width: 20%;
+  height: 3rem;
+  margin-top: 1rem;
+  line-height: 3rem;
+  text-align: center;
+  border: 0.1rem solid #CCCCCC;
+}
+.floatTable .tableBox_third li .celarCondition,
+.floatTable .tableBox_third li .contain {
+  width: 100%;
+  height: 6rem;
+  line-height: 6rem;
+  font-size: 1.4rem;
+  text-align: center;
+  outline: none;
+  border: none;
+  color: #666666;
+  background-color: #fff;
+}
+.floatTable .tableBox_third li .contain {
+  color: #fff;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  background-color: #FF8A00;
+}
+.floatTable .disActive {
+  display: none;
+}
